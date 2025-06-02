@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MLBB Diamond Top-Up</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <header class="bg-gray-900 text-white p-4 text-center">
+    <h1 class="text-2xl font-bold">MLBB Diamond Top-Up</h1>
+    <nav class="mt-2">
+      <a href="#shop" class="text-yellow-400 font-bold mx-2">Shop</a>
+      <a href="#how" class="text-yellow-400 font-bold mx-2">How to Top-Up</a>
+      <a href="#contact" class="text-yellow-400 font-bold mx-2">Contact</a>
+    </nav>
+  </header>
+
+  <section class="bg-gradient-to-r from-cyan-400 to-blue-600 text-white text-center py-12">
+    <h2 class="text-2xl font-semibold mb-4">Instant & Trusted MLBB Diamond Top-Up</h2>
+    <a href="#shop" class="bg-yellow-400 text-black px-6 py-3 rounded-md font-semibold hover:bg-yellow-300 transition">Top-Up Now</a>
+  </section>
+  
+  
+  
+  
+  
+  <section class="gap-4 mt-6 flex items-center justify-center">
+  <div class="bg-gradient-to-br from-slate-900 to-slate-800 bg-white shadow-lg rounded-2xl p-8 w-full max-w-md">
+    <h2 class="text-2xl font-bold mb-6 text-center text-blue-600">MLBB Diamond Top-Up</h2>
+
+    <form class="space-y-4">
+      <!-- Two Column Input for Player ID and Zone ID -->
+      <div class="grid grid-cols-2 gap-4">
+        <!-- Player ID -->
+        <div>
+          <label for="userId" class="block text-sm font-medium text-gray-700 mb-1" for="player-id">Player ID</label>
+          <input id="userId"type="text" id="player-id" name="player-id" placeholder="Enter ID: 12345678" 
+            class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        </div>
+
+        <!-- Zone ID -->
+        <div>
+          <label for="serverId" class="block text-sm font-medium text-gray-700 mb-1" for="zone-id">Zone ID</label>
+          <input id="serverId"type="text" id="zone-id" name="zone-id" placeholder="Enter Zone ID: 1234"
+            class="w-full p-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-400 focus:outline-none">
+        </div>
+      </div>
+      
+      <!-------Diri mo top.up ang IGN sa user----------->
+      <div id="ignResult" class="mt-4 text-center text-lg font-semibold transition-all"></div>
+      <!-------END of Diri mo top.up ang IGN sa user----------->
+
+      <!-- Submit Button -->
+      <button type="submit"
+        class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">
+        Continue
+      </button>
+    </form>
+  </div>
+  </section>
+  
+  
+ 
+
+  <section id="shop" class="py-10 text-center">
+    <h3 class="text-xl font-bold">Our Diamond Packages</h3>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+      <div class="bg-gray-800 border border-gray-200 rounded-lg shadow-md p-4 w-48 hover:scale-105 transition duration-300 hover:ring-2 hover:ring-yellow-400">
+        <h4 class="text-white font-bold mb-2">20 + 1 Diamonds</h4>
+        <p class="text-yellow-400 font-semibold text-lg mb-4">₱20</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-full">Buy Now</button>
+      </div>
+      <div class="bg-gray-800 border border-gray-200 rounded-lg shadow-md p-4 w-48 hover:scale-105 transition duration-300 hover:ring-2 hover:ring-yellow-400">
+        <h4 class="text-white font-bold mb-2">50 + 5 Diamonds</h4>
+        <p class="text-yellow-400 font-semibold text-lg mb-4">₱20</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-full">Buy Now</button>
+      </div>
+      <div class="bg-gray-800 border border-gray-200 rounded-lg shadow-md p-4 w-48 hover:scale-105 transition duration-300 hover:ring-2 hover:ring-yellow-400">
+        <h4 class="text-white font-bold mb-2">100 + 10 Diamonds</h4>
+        <p class="text-yellow-400 font-semibold text-lg mb-4">₱20</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-full">Buy Now</button>
+      </div>
+      <div class="bg-gray-800 border border-gray-200 rounded-lg shadow-md p-4 w-48 hover:scale-105 transition duration-300 hover:ring-2 hover:ring-yellow-400">
+        <h4 class="text-white font-bold mb-2">250 + 20 Diamonds</h4>
+        <p class="text-yellow-400 font-semibold text-lg mb-4">₱20</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-full">Buy Now</button>
+      </div>
+      <div class="bg-gray-800 border border-gray-200 rounded-lg shadow-md p-4 w-48 hover:scale-105 transition duration-300 hover:ring-2 hover:ring-yellow-400">
+        <h4 class="text-white font-bold mb-2">500 + 50 Diamonds</h4>
+        <p class="text-yellow-400 font-semibold text-lg mb-4">₱20</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-full">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="py-10 text-center">
+    <h3 class="text-xl font-bold mb-4">How to Top-Up</h3>
+    <ol class="list-decimal list-inside space-y-2 text-left max-w-md mx-auto">
+      <li>Enter your MLBB User ID and Zone ID</li>
+      <li>Select your desired diamond package</li>
+      <li>Send payment to our GCash</li>
+      <li>Receive diamonds within minutes</li>
+    </ol>
+  </section>
+
+  <section id="contact" class="py-10 text-center">
+    <h3 class="text-xl font-bold mb-2">Contact Us</h3>
+    <p>Email: support@mlbbdiamonds.ph</p>
+    <p>Facebook: fb.com/Tedbitspage</p>
+  </section>
+
+  <footer class="py-6 bg-gray-900 text-center text-gray-500 text-sm">
+    <p>&copy; 2025 MLBB Diamond Top-Up | Powered by RunFasteeer</p>
+  </footer>
+  
+  <!----------JS script para look.up sa IGN sa user--------------->
+  <script>
+    const userIdInput = document.getElementById('userId');
+    const serverIdInput = document.getElementById('serverId');
+    const ignResult = document.getElementById('ignResult');
+
+    function simulateIGNLookup(uid, server) {
+      if (uid === "12345678" && server === "1234") {
+        return "✨ Zilong_Palautog ✨";
+      } else {
+        return null;
+      }
+    }
+
+    function showIGNIfReady() {
+      const uid = userIdInput.value.trim();
+      const server = serverIdInput.value.trim();
+
+      if (uid.length >= 6 && server.length === 4) {
+        const ign = simulateIGNLookup(uid, server);
+        if (ign) {
+          ignResult.textContent = "IGN: " + ign;
+          ignResult.className = "mt-4 text-center text-lg font-semibold text-green-400";
+        } else {
+          ignResult.textContent = "❌ IGN not found. Please check your details.";
+          ignResult.className = "mt-4 text-center text-lg font-semibold text-red-400";
+        }
+      } else {
+        ignResult.textContent = "";
+      }
+    }
+
+    userIdInput.addEventListener('input', showIGNIfReady);
+    serverIdInput.addEventListener('input', showIGNIfReady);
+  </script>
+  <!----------End of JS script para look.up sa IGN sa user----------->
+  
+  
+</body>
+</html>

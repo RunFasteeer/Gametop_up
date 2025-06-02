@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Credits Top-Up | RunFasteeer</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+
+  <!-- Custom Animations -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const fadeEls = document.querySelectorAll('.animate-fade-in, .animate-fade-up');
+      fadeEls.forEach((el, i) => {
+        el.style.opacity = 0;
+        el.style.transform = 'translateY(20px)';
+        setTimeout(() => {
+          el.style.transition = 'all 0.6s ease';
+          el.style.opacity = 1;
+          el.style.transform = 'translateY(0)';
+        }, 200 * i);
+      });
+    });
+  </script>
+</head>
+
+<body class="bg-gray-950 text-white">
+    
+    
+      <!-- Sticky Transparent Navbar --> 
+  <nav class="sticky top-0 z-50 bg-transparent backdrop-blur-sm px-6 py-3">
+    <div class="flex items-center justify-between">
+      
+      <!-- Left: Shop Name -->
+      <div class="text-white text-lg font-bold tracking-wide">
+        RunFasteeer
+      </div>
+
+      <!-- Right: Sign-in + Language Dropdown -->
+      <div class="flex items-center gap-4 relative">
+        
+        <!-- Sign In -->
+        <a href="#" class="text-white hover:text-blue-300 font-medium transition">Sign In</a>
+
+        <!-- Language Dropdown -->
+        <div class="group relative">
+          <button class="flex items-center gap-1 text-white hover:text-blue-300 focus:outline-none">
+            <img src="https://flagcdn.com/w40/ph.png" alt="Language" class="w-6 h-4 object-cover rounded shadow" />
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          
+          <!-- Dropdown Menu -->
+          <div class="absolute right-0 mt-2 bg-white text-gray-800 rounded shadow-lg w-32 hidden group-hover:block">
+            <a href="#" class="flex items-center px-3 py-2 hover:bg-gray-100">
+              <img src="https://flagcdn.com/w40/us.png" class="w-5 h-3 mr-2" alt="US"> English
+            </a>
+            <a href="#" class="flex items-center px-3 py-2 hover:bg-gray-100">
+              <img src="https://flagcdn.com/w40/ph.png" class="w-5 h-3 mr-2" alt="PH"> Filipino
+            </a>
+            <a href="#" class="flex items-center px-3 py-2 hover:bg-gray-100">
+              <img src="https://flagcdn.com/w40/jp.png" class="w-5 h-3 mr-2" alt="JP"> Japanese
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END Of Sticky Transparent Navbar -->
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-indigo-700 via-blue-900 to-black opacity-40 z-0"></div>
+    <div class="relative z-10 max-w-2xl">
+      <h1 class="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in">Top-Up Game Credits Instantly</h1>
+      <p class="text-lg md:text-xl text-gray-300 mb-8 animate-fade-in delay-200">Fast, secure, and hassle-free for MLBB, CODM, HoK, and more.</p>
+      <a href="#games" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full transition transform hover:scale-105">Browse Games</a>
+    </div>
+  </section>
+
+  <!-- Game Grid -->
+  <section id="games" class="py-16 px-6 bg-gray-900">
+    <h2 class="text-3xl font-bold text-center mb-12 animate-fade-up">Choose a Game</h2>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      <!-- Game Card Example -->
+      <a href="mlbb_page.html" class="bg-gray-800 bg-opacity-60 hover:bg-opacity-80 backdrop-blur-md rounded-xl p-6 text-center shadow-lg hover:scale-105 transition duration-300">
+        <img src="https://upload.wikimedia.org/wikipedia/en/7/7e/Mobile_Legends_Bang_Bang.png" alt="MLBB" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-lg font-semibold">Mobile Legends</h3>
+      </a>
+      <a href="#topup" class="bg-gray-800 bg-opacity-60 hover:bg-opacity-80 backdrop-blur-md rounded-xl p-6 text-center shadow-lg hover:scale-105 transition duration-300">
+        <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Call_of_Duty_Mobile_logo.png" alt="CODM" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-lg font-semibold">COD Mobile</h3>
+      </a>
+      <a href="#topup" class="bg-gray-800 bg-opacity-60 hover:bg-opacity-80 backdrop-blur-md rounded-xl p-6 text-center shadow-lg hover:scale-105 transition duration-300">
+        <img src="https://play-lh.googleusercontent.com/QKVmGJ2CUAFd09HWB7F3CBXc2VvU4UV7x_UQxVSKh3uJfkvTwEX5Zfq6Rya_rZGX5DM=w240-h480" alt="HoK" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-lg font-semibold">Honor of Kings</h3>
+      </a>
+      <a href="#topup" class="bg-gray-800 bg-opacity-60 hover:bg-opacity-80 backdrop-blur-md rounded-xl p-6 text-center shadow-lg hover:scale-105 transition duration-300">
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2d/Genshin_Impact_logo.svg" alt="Genshin" class="w-16 h-16 mx-auto mb-4">
+        <h3 class="text-lg font-semibold">Genshin Impact</h3>
+      </a>
+    </div>
+  </section>
+
+  <!-- Package Section -->
+  <section id="topup" class="py-16 px-6 bg-gray-950">
+    <h2 class="text-3xl font-bold text-center mb-12 animate-fade-up">Choose Your Package</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+      <!-- Package Card -->
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-xl hover:scale-105 transition duration-300 hover:ring-2 hover:ring-yellow-400">
+        <h3 class="text-xl font-bold mb-2">Diamond x86</h3>
+        <p class="text-yellow-400 font-semibold text-lg mb-4">₱49</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-full">Buy Now</button>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-xl hover:scale-105 transition duration-300 hover:ring-2 hover:ring-yellow-400">
+        <h3 class="text-xl font-bold mb-2">Diamond x172</h3>
+        <p class="text-yellow-400 font-semibold text-lg mb-4">₱99</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-full">Buy Now</button>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-xl hover:scale-105 transition duration-300 hover:ring-2 hover:ring-yellow-400">
+        <h3 class="text-xl font-bold mb-2">Diamond x257</h3>
+        <p class="text-yellow-400 font-semibold text-lg mb-4">₱149</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-full">Buy Now</button>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-xl hover:scale-105 transition duration-300 hover:ring-2 hover:ring-yellow-400">
+        <h3 class="text-xl font-bold mb-2">Diamond x344</h3>
+        <p class="text-yellow-400 font-semibold text-lg mb-4">₱199</p>
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold px-4 py-2 rounded-full">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="py-16 px-6 bg-gray-900 border-t border-gray-800">
+    <h2 class="text-3xl font-bold text-center mb-12">How to Top-Up</h2>
+    <div class="flex flex-col sm:flex-row justify-center gap-6 text-center max-w-5xl mx-auto">
+      <div class="flex-1">
+        <div class="text-yellow-400 text-4xl mb-2">🆔</div>
+        <h4 class="font-bold text-lg mb-1">Enter ID</h4>
+        <p class="text-sm text-gray-400">Input your player ID & server</p>
+      </div>
+      <div class="flex-1">
+        <div class="text-yellow-400 text-4xl mb-2">💎</div>
+        <h4 class="font-bold text-lg mb-1">Select Package</h4>
+        <p class="text-sm text-gray-400">Choose your diamond bundle</p>
+      </div>
+      <div class="flex-1">
+        <div class="text-yellow-400 text-4xl mb-2">💰</div>
+        <h4 class="font-bold text-lg mb-1">Pay & Done</h4>
+        <p class="text-sm text-gray-400">Receive instantly after payment</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-12 px-6 bg-gradient-to-r from-indigo-700 to-blue-800 text-center">
+    <h2 class="text-3xl font-bold mb-4">Trusted by Gamers Nationwide</h2>
+    <p class="text-gray-200 mb-6">RunFasteeer is your legit PH top-up partner. No delays. No scams. 100% legit.</p>
+    <a href="#topup" class="bg-yellow-400 hover:bg-yellow-500 text-black font-semibold px-6 py-3 rounded-full transition transform hover:scale-105">Top-Up Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 bg-gray-900 text-center text-gray-500 text-sm">
+    © 2025 RunFasteeer. All rights reserved.
+  </footer>
+
+</body>
+</html>
+
+
+
+
+
